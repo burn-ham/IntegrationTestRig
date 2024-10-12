@@ -1,4 +1,3 @@
-import os
 import subprocess
 import time
 import unittest
@@ -9,9 +8,7 @@ class IntegrationTestRig(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        project_root = os.path.dirname(os.path.dirname(__file__))
-        resource_file = os.path.join(project_root, cls.resource_file)
-        cls.service_process = subprocess.Popen(["python", resource_file])
+        cls.service_process = subprocess.Popen(["python", cls.resource_file])
         time.sleep(cls.seconds_to_wait)
 
     @classmethod
