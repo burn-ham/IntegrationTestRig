@@ -35,7 +35,7 @@ This project provides an `IntegrationTestRig` class to facilitate integration te
 
     ```python
     import requests
-    from src.IntegrationTestRig import IntegrationTestRig
+    from IntegrationTestRig.IntegrationTestRig import IntegrationTestRig
 
     class TestExample(IntegrationTestRig):
         resource_file = "tests/ExampleService.py"

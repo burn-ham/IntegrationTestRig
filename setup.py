@@ -2,9 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name="IntegrationTestRig",
-    version="0.0.3",
-    packages=find_packages(where="src"),
-    package_dir={"": "src"},
+    version="0.0.4",
+    packages=find_packages(),
     include_package_data=True,
     install_requires=[
         "requests",
